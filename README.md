@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio 프로젝트
 
-## Getting Started
+본 프로젝트는 Next.js와 React를 활용해 개인 포트폴리오 웹사이트를 제작하는 작업입니다.  
+경력, 기술 스택, 프로젝트 경험 등을 효과적으로 소개하는 데 초점을 맞추고 있습니다.
 
-First, run the development server:
+---
+
+## 🚀 실행 방법
 
 ```bash
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 프로젝트 구조
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Next.js 앱 디렉터리 (페이지, 레이아웃, API 라우트 포함)
+│   ├── api                 # API 라우트 폴더
+│   │   ├── route.ts        # 기본 API 라우트 엔트리포인트 (CSR에서 API 키 노출 방지용 서버 사이드 처리)
+│   │   ├── csr             # csr 페이지
+│   │   │   └── page.tsx
+│   │   ├── ssg             # ssg 페이지
+│   │   │   └── page.tsx
+│   │   ├── ssr             # ssr 페이지
+│   │   │   └── page.tsx
+│   ├── layout.tsx          # 전역 레이아웃
+│   ├── loading.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx            # 루트 페이지
+├── hooks/                  # 커스텀 React 훅 모음
+├── lib/                    # 공통 라이브러리
+│   ├── consts.ts
+│   └── data.ts
+├── styles/                 # 스타일 및 CSS 파일 관리
+│   └── global.css
+├── types/                  # TypeScript 타입 정의
+│   └── exchangeRate.ts
+└── ui/                     # UI 컴포넌트
+    ├── fonts.ts            # 폰트 설정
+    ├── About.tsx
+    ├── Example.tsx
+    ├── ....tsx
+    └── Skills.tsx
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## TODO
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. 디자인 개선
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 전체적인 UI/UX 스타일링 및 반응형 디자인 적용
+- 컬러 팔레트, 타이포그래피, 레이아웃 조정
+- 애니메이션 및 인터랙션 효과 추가
 
-## Deploy on Vercel
+### 2. 재사용 가능한 컴포넌트 개발
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 공통 버튼, 입력폼, 카드, 모달 등 컴포넌트 설계 및 구현
+- Tailwind CSS를 활용한 스타일링 일관성 유지
+- 접근성(ARIA) 및 반응형 대응 고려
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. 에러 핸들링
+
+- API 호출 실패 시 사용자에게 알림 제공
+- 폼 입력 검증 및 유효성 검사 구현
+- 예외 상황에 대한 적절한 대처 및 로그 기록
+
+### 4. 서버드리븐 UI
+
+- DB 연결 후 서버드리븐 UI 패턴 적용
