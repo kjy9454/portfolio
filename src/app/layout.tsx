@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/global.css";
 import { inter } from "@/ui/fonts";
-import Link from "next/link";
 import Header from "@/ui/Header";
 import Footer from "@/ui/Footer";
 

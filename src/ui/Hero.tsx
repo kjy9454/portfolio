@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowDown, Mail, Phone } from "lucide-react";
-import Link from "next/link";
 import { MY_PHONE, MY_EMAIL } from "@/lib/consts";
 
 const Hero = () => {
