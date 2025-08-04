@@ -1,6 +1,7 @@
 import React from "react";
 import { Code } from "lucide-react";
 import Link from "next/link";
+import { MY_PHONE, MY_EMAIL } from "@/lib/consts";
 
 const Footer = () => {
   return (
@@ -62,18 +63,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">연락처</h4>
             <div className="space-y-2 text-gray-300">
-              <Link
-                href="mailto:kjy9454@naver.com"
+              <a
+                href={`"mailto:${MY_EMAIL}`}
                 className="block hover:text-white transition-colors duration-200"
               >
                 kjy9454@naver.com
-              </Link>
-              <Link
-                href="tel:+821020465225"
+              </a>
+              <a
+                href={`"tel:${MY_PHONE}`}
                 className="block hover:text-white transition-colors duration-200"
               >
                 +82 10-2046-5225
-              </Link>
+              </a>
               <p>대한민국, 서울</p>
             </div>
           </div>
