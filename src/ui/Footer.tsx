@@ -28,14 +28,14 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">빠른 링크</h4>
             <nav className="space-y-2">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.href}
                   href={item.href}
                   className="block text-gray-300 hover:text-white transition-colors duration-200"
                   aria-label={`${item.label} 섹션으로 이동`}
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
             </nav>
           </div>

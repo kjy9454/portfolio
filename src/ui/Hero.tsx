@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
 
           <div className="pt-12">
-            <Link
+            <a
               href="#about"
               className="inline-flex flex-col items-center text-gray-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md p-2 transition-colors duration-200"
               aria-label="소개 섹션으로 스크롤"
@@ -65,7 +65,7 @@ const Hero = () => {
                 className="animate-bounce"
                 aria-hidden="true"
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

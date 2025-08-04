@@ -82,7 +82,7 @@ const Header = () => {
               onKeyDown={handleEscapeKey}
             >
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.href}
                   href={item.href}
                   className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 focus:text-blue-600 focus:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset rounded-md transition-colors duration-200"
@@ -93,7 +93,7 @@ const Header = () => {
                   aria-label={`${item.label} 섹션으로 이동`}
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
