@@ -4,6 +4,7 @@ import Experience from "@/ui/Experience";
 import Skills from "@/ui/Skills";
 import Projects from "@/ui/Projects";
 import Contact from "@/ui/Contact";
+import Example from "@/ui/Example";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Skills />
+      <Example />
       <Contact />
     </>
   );

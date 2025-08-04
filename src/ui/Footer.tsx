@@ -2,6 +2,7 @@ import React from "react";
 import { Code } from "lucide-react";
 import Link from "next/link";
 import { MY_PHONE, MY_EMAIL } from "@/lib/consts";
+import { navItems } from "@/lib/data";
 
 const Footer = () => {
   return (
@@ -26,36 +27,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">빠른 링크</h4>
             <nav className="space-y-2">
-              <Link
-                href="#about"
-                className="block text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                소개
-              </Link>
-              <Link
-                href="#experience"
-                className="block text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                경력
-              </Link>
-              <Link
-                href="#projects"
-                className="block text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                프로젝트
-              </Link>
-              <Link
-                href="#skills"
-                className="block text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                기술 스택
-              </Link>
-              <Link
-                href="#contact"
-                className="block text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                연락처
-              </Link>
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="block text-gray-300 hover:text-white transition-colors duration-200"
+                  aria-label={`${item.label} 섹션으로 이동`}
+                >
+                  {item.label}
+                </Link>
+              ))}
             </nav>
           </div>
 

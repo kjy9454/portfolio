@@ -1,6 +1,15 @@
 import { DateTime } from "luxon";
 import { MCC_START_DATE, MY_CAREER_START } from "./consts";
 
+export const navItems = [
+  { href: "/#about", label: "소개" },
+  { href: "/#experience", label: "경력" },
+  { href: "/#projects", label: "프로젝트" },
+  { href: "/#skills", label: "기술" },
+  { href: "/#example", label: "예시" },
+  { href: "/#contact", label: "연락처" },
+];
+
 export function getCareer(start?: string): string {
   const now = DateTime.now().setZone("Asia/Seoul");
   const startDate = DateTime.fromISO(start ?? MY_CAREER_START);
@@ -20,6 +29,7 @@ export function getCareer(start?: string): string {
 const MCCPeriod = `${DateTime.fromISO(MCC_START_DATE).toFormat(
   "yyyy.MM"
 )} - 재직 중 (${getCareer(MCC_START_DATE)})`;
+
 export const experiences = [
   {
     company: "MCC",
