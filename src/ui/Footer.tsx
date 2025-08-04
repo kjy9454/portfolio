@@ -45,13 +45,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">연락처</h4>
             <div className="space-y-2 text-gray-300">
               <a
-                href={`"mailto:${MY_EMAIL}`}
+                href={`mailto:${MY_EMAIL}`}
                 className="block hover:text-white transition-colors duration-200"
               >
                 kjy9454@naver.com
               </a>
               <a
-                href={`"tel:${MY_PHONE}`}
+                href={`tel:${MY_PHONE}`}
                 className="block hover:text-white transition-colors duration-200"
               >
                 +82 10-2046-5225

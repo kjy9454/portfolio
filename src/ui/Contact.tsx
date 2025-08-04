@@ -9,14 +9,14 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       label: "이메일",
       value: "kjy9454@naver.com",
-      href: `"mailto:${MY_EMAIL}`,
+      href: `mailto:${MY_EMAIL}`,
       color: "blue",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       label: "전화번호",
       value: "+82 10-2046-5225",
-      href: `"tel:${MY_PHONE}`,
+      href: `tel:${MY_PHONE}`,
       color: "green",
     },
     {

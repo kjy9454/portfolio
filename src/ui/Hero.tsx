@@ -36,7 +36,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
             <a
-              href={`"mailto:${MY_EMAIL}`}
+              href={`mailto:${MY_EMAIL}`}
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200 font-medium"
               aria-label="김재영에게 이메일 보내기"
             >
@@ -44,7 +44,7 @@ const Hero = () => {
               이메일 보내기
             </a>
             <a
-              href={`"tel:${MY_PHONE}`}
+              href={`tel:${MY_PHONE}`}
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 focus:border-blue-600 focus:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200 font-medium"
               aria-label="김재영에게 전화하기"
             >
