@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="space-y-4">
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-green-600"
             >
               김재영
             </h1>

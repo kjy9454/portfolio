@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <Link
             href={"/"}
-            className="font-bold text-lg sm:text-xl text-gray-900"
+            className="font-bold text-lg sm:text-xl leading-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-green-600"
           >
             Portfolio
           </Link>
