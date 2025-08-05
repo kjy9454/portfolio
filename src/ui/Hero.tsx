@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDown, Mail, Phone } from "lucide-react";
+import { ArrowDown, Github, Mail, Phone } from "lucide-react";
 import { MY_PHONE, MY_EMAIL } from "@/lib/consts";
 
 const Hero = () => {
@@ -49,6 +49,15 @@ const Hero = () => {
             >
               <Phone size={20} aria-hidden="true" />
               전화하기
+            </a>
+            <a
+              href={"https://github.com/kjy9454"}
+              target="_blank"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 focus:bg-graty-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200 font-medium"
+              aria-label="김재영 깃허브 링크"
+            >
+              <Github size={20} aria-hidden="true" />
+              Github
             </a>
           </div>
 
